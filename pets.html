@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Available Pets - Pet Adoption Help</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">Kind<span>Paws</span></a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pets.html" class="active">Available Pets</a></li>
+            <li><a href="process.html">Adoption Process</a></li>
+            <li><a href="care.html">Pet Care Tips</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            
+        </ul>
+    </header>
+
+    <main class="container">
+        <h1>Available Pets</h1>
+        <p>Find your perfect match! Use the filters to narrow your search.</p>
+
+        <form class="pet-filters" id="filter-form">
+            <div class="filter-group">
+                <label for="filter-type">Type</label>
+                <select id="filter-type">
+                    <option value="all">All</option>
+                    <option value="Dog">Dog</option>
+                    <option value="Cat">Cat</option>
+                    <option value="Rabbit">Rabbit</option>
+                    <option value="Rabbit">horse</option>
+                    <option value="Rabbit">pigeon</option>
+                    <option value="Rabbit">parrot</option>
+                    <option value="Rabbit">other</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="filter-age">Age</label>
+                <select id="filter-age">
+                    <option value="all">All</option>
+                    <option value="Young">Young</option>
+                    <option value="Adult">Adult</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="filter-gender">Gender</label>
+                <select id="filter-gender">
+                    <option value="all">All</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </div>
+        </form>
+
+        <div class="pet-grid" id="pet-grid-container">
+            </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 PawsConnect. All rights reserved.</p>
+    </footer>
+
+   <script type="module" src="script.js"></script>
+</body>
+</html>

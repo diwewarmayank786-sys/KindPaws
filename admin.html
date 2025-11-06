@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Pet Adoption</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">Kind<span>Paws</span> - Admin</a>
+        <ul class="nav-links">
+            <li><a href="index.html">View Site</a></li>
+            <li><button id="logout-button" class="btn">Logout</button></li>
+        </ul>
+    </header>
+
+    <main class="container">
+        <h1>Manage Pets</h1>
+
+        <form class="contact-form" id="add-pet-form" style="margin-bottom: 3rem;">
+            <h2>Add New Pet</h2>
+            <div class="form-group">
+                <label for="pet-name">Name</label>
+                <input type="text" id="pet-name" required>
+            </div>
+            <div class="form-group">
+                <label for="pet-type">Type</label>
+                <select id="pet-type" required>
+                    <option value="Dog">Dog</option>
+                    <option value="Cat">Cat</option>
+                    <option value="Rabbit">Rabbit</option>
+                    <option value="horse">horse</option>
+                    <option value="Pigeon">pigeon</option>
+                    <option value="Parrot">parrot</option>
+                    <option value="other">other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="pet-age">Age</label>
+                <select id="pet-age" required>
+                    <option value="Young">Young</option>
+                    <option value="Adult">Adult</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="pet-gender">Gender</label>
+                <select id="pet-gender" required>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="pet-image">Image URL</label>
+                <input type="url" id="pet-image" placeholder="https://example.com/image.jpg" required>
+            </div>
+            <div class="form-group">
+                <label for="pet-description">Description</label>
+                <textarea id="pet-description" required></textarea>
+            </div>
+            <button type="submit" class="btn">Add Pet</button>
+        </form>
+
+        <h2>Existing Pets</h2>
+        <div class="pet-grid" id="admin-pet-grid">
+            </div>
+
+    </main>
+
+    <script type="module" src="admin.js"></script>
+</body>
+</html>

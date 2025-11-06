@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Pet Adoption Help</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">Kind<span>Paws</span></a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pets.html">Available Pets</a></li>
+            <li><a href="process.html">Adoption Process</a></li>
+            <li><a href="care.html">Pet Care Tips</a></li>
+            <li><a href="contact.html" class="active">Contact Us</a></li>
+        </ul>
+    </header>
+
+    <main class="container">
+        <h1>Get In Touch</h1>
+        <p>Have questions about a pet or the adoption process? Send us a message!</p>
+
+        <form class="contact-form" id="contact-form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number (Optional)</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>        
+        </form>
+
+        <div class="card" style="margin-top: 3rem; padding: 2rem; text-align: center;">
+            <h2>Local Shelter Info</h2>
+            <p><strong>City Animal Shelter:</strong> 123 Adoption Ave, Petburg, PA</p>
+            <p><strong>Phone:</strong> (555) 123-4567</p>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 PawsConnect. All rights reserved.</p>
+    </footer>
+
+    <script type="module" src="contact.js"></script>
+
+</body>
+</html>

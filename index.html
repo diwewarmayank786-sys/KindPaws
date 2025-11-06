@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Adoption Help</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="login-overlay">
+        <div id="login-modal">
+            <h2>Welcome Back!</h2>
+            <p>Please log in to manage your pets.</p>
+            
+            <form id="login-form" class="contact-form" style="box-shadow: none; padding: 0; margin-top: 2rem;">
+                <div class="form-group">
+                    <label for="login-email">Email</label>
+                    <input type="email" id="login-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" required>
+                </div>
+                <button type="submit" class="btn" style="width: 100%;">Login</button>
+                <p id="login-error" style="color: red; margin-top: 1rem;"></p>
+                <p style="text-align: center; margin-top: 1rem;">
+                    Don't have an account? <a href="register.html">Register here</a>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <div id="main-content" class="hidden">
+        <header>
+            <a href="index.html" class="logo">Kind<span>Paws</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="pets.html">Available Pets</a></li>
+                <li><a href="process.html">Adoption Process</a></li>
+                <li><a href="care.html">Pet Care Tips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="admin.html" style="color: var(--secondary-color);">Admin Panel</a></li>
+                <li><button id="logout-button">Logout</button></li>
+            </ul>
+        </header>
+
+        <main>
+            <section class="hero container">
+                <div class="hero-text">
+                    <h1>Find Your New Best Friend</h1>
+                    <p>Open your heart and home to a rescue animal. Adopting saves a life and brings you endless joy. Find companionship, love, and a loyal friend today.</p>
+                    <a href="pets.html" class="btn">Meet the Pets</a>
+                </div>
+                <div class="hero-image">
+                    
+                </div>
+            </section>
+
+            <section class="featured-pets container">
+                <h2>Featured Pets</h2>
+                <div class="pet-grid" id="featured-pet-grid">
+                    <p>Loading featured pets...</p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 PawsConnect. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script type="module" src="index.js"></script>
+
+</body>
+</html>
